@@ -1,0 +1,38 @@
+.button-hero__wraper {
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  align-content: center;
+  padding: 30px;
+}
+.button-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background: #188ce8;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+
+  &__text:hover,
+  &__text:focus {
+    color: rgba(0, 0, 0, 0.25);
+  }
+  &__text {
+    padding: 10px 32px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+  }
+}

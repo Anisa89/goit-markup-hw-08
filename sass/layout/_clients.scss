@@ -1,0 +1,90 @@
+.clients {
+  display: flex;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  &-name {
+    font-family: Roboto;
+    font-style: 700;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    padding-bottom: 50px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  &-item {
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-item:last-child {
+    margin-right: 0;
+  }
+  &-item:hover,
+  &-item:focus {
+    border-color: $hover-color;
+    fill: $hover-color;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-link:hover svg,
+  &-link:focus svg {
+    fill: $hover-color;
+    border-color: $hover-color;
+
+    color: #afb1b8;
+  }
+  &-link svg {
+    fill: rgba(175, 177, 184, 1);
+  }
+  &-svg {
+    fill: currentColor;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.yaco {
+  width: 46px;
+  height: 50px;
+}
+.tagline {
+  width: 40px;
+  height: 52px;
+}
+.company {
+  width: 40px;
+  height: 42px;
+}
+.fosterpeters {
+  width: 80px;
+  height: 42px;
+}
+.brand {
+  width: 60px;
+  height: 48px;
+}
+.tag {
+  width: 88px;
+  height: 46px;
+}
