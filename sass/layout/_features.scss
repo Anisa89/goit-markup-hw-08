@@ -9,16 +9,25 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: $secondary-color;
+    color: blue;
     padding-top: 30px;
   }
   &-list {
     display: flex;
     flex-wrap: nowrap;
+    width: 270px;
   }
-  &-item:not(:first-child) {
+  &-item {
+    @media screen and (min-width: 480px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  /* &-item:not(:first-child) {
     padding-left: 30px;
-  }
+  }*/
   &-item::before {
     display: block;
     content: '';
@@ -39,17 +48,5 @@
   }
   &-item.astronaut::before {
     background-image: url('../images/Feautures/astronaut.svg.svg');
-  }
-  &-desc__title-advantages {
-    font-family: Roboto;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.714;
-
-    letter-spacing: 0.03em;
-
-    color: $accent-color;
-    width: 270px;
-    padding-top: 10px;
   }
 }
