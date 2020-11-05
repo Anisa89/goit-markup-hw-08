@@ -1,20 +1,26 @@
 .social-list {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-top: 16px;
+    padding-bottom: 24px;
 
-  @media screen and (max-width: 480px) and (max-width: 767px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-left: 122px;
     padding-right: 122px;
     padding-top: 16px;
     padding-bottom: 24px;
   }
+  &-item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 
   &-link {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;

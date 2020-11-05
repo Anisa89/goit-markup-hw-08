@@ -83,16 +83,17 @@ img {
   }
 }
 
-.social-list {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .social-list {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+  }
 }
 
-@media screen and (max-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .social-list {
     padding-left: 122px;
     padding-right: 122px;
@@ -101,8 +102,11 @@ img {
   }
 }
 
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-list-link {
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -130,6 +134,13 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .features-list {
     padding-top: 94px;
@@ -147,7 +158,7 @@ img {
   padding-top: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .features-list {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -853,8 +864,8 @@ textarea {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-top: -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -873,9 +884,9 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-left: 15px;
-    margin-top: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -900,6 +911,12 @@ textarea {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .team__name {
+    padding-top: 30px;
+  }
+}
+
 .team-title__wraper {
   align-items: center;
   text-align: center;
@@ -922,6 +939,12 @@ textarea {
 }
 
 @media screen and (max-width: 480px) and (max-width: 767px) {
+  .team__profession {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team__profession {
     padding-top: 10px;
   }
