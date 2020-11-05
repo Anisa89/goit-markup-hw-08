@@ -838,7 +838,28 @@ textarea {
   }
 }
 
+.team__list {
+  /*ul*/
+}
+
+@media screen and (max-width: 480px) and (max-width: 767px) {
+  .team__list {
+    display: block;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}
+
 .team__item {
+  /*li*/
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -850,18 +871,11 @@ textarea {
   }
 }
 
-@media screen and (max-width: 480px) and (max-width: 767px) {
-  .team__list {
-    display: block;
-    flex-wrap: nowrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-left: 15px;
+    margin-top: 15px;
   }
 }
 
@@ -875,7 +889,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-name__img {
     width: 354px;
-    height: 536px;
   }
 }
 
@@ -914,62 +927,6 @@ textarea {
   }
 }
 
-/*.wraper-team {
-  padding-bottom: 47px;
-}*/
-/*
-.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $secondary-color;
-  margin-bottom: 54px;
-}
-.team__item {
-  background: #ffffff;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team__list {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
- 
-  letter-spacing: 0.03em;
-
-  color: $secondary-color;
-}
-
-.team-title__wraper {
-  align-items: center;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.team__profession {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.19;
-
-  letter-spacing: 0.03em;
-
-  color: $accent-color;
-  margin-bottom: 30px;
-}*/
 .clients {
   display: flex;
   align-items: center;
