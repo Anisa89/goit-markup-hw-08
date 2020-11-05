@@ -1,6 +1,10 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    &-list {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
 
   &-title__advantages {
     font-weight: bold;
@@ -9,25 +13,44 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: blue;
+    color: $secondary-color;
     padding-top: 30px;
   }
   &-list {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 270px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 480px) {
+      display: block;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
   &-item {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
       }
     }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:not(:first-child) {
+        padding-left: 0;
+      }
+      width: 270px;
+    }
   }
 
-  /* &-item:not(:first-child) {
-    padding-left: 30px;
-  }*/
   &-item::before {
     display: block;
     content: '';
@@ -48,5 +71,18 @@
   }
   &-item.astronaut::before {
     background-image: url('../images/Feautures/astronaut.svg.svg');
+  }
+  &-desc__title-advantages {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: $accent-color;
+    /*width: 270px;*/
+
+    padding-top: 10px;
   }
 }

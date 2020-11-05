@@ -92,6 +92,15 @@ img {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) and (max-width: 767px) {
+  .social-list {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+}
+
 .social-list-link {
   display: flex;
   align-items: center;

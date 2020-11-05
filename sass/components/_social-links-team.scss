@@ -5,6 +5,13 @@
   padding-right: 32px;
   padding-top: 16px;
   padding-bottom: 30px;
+  @media screen and (max-width: 480px) and (max-width: 767px) {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
   &-link {
     display: flex;
     align-items: center;
