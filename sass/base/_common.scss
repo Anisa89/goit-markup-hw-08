@@ -9,7 +9,9 @@ body {
   font-family: roboto, sans-serif;
   font-style: normal;
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 .list {
   list-style: none;
 }

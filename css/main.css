@@ -22,6 +22,10 @@ body {
   font-style: normal;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -477,10 +481,13 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  min-width: 100%;
   width: 100%;
   height: 100%;
   background-color: rgba(47, 48, 58, 0.4);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -492,15 +499,28 @@ img {
 
 /*============ MODAL  ============*/
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    width: 450px;
+    min-width: 450px;
+    height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -509,10 +529,9 @@ img {
 }
 
 .modal-wraper {
-  width: 528px;
+  width: 100%;
   height: 581px;
   margin: auto;
-  padding: 40px;
 }
 
 .modal-btn-svg {
@@ -548,7 +567,7 @@ img {
 
 /*============ MODAL FORM ============*/
 .modal-form {
-  width: 448px;
+  width: 100%;
 }
 
 .modal-form__text-area {
@@ -630,7 +649,7 @@ textarea {
   flex-direction: column;
   margin-bottom: 10px;
   outline: none;
-  width: 448px;
+  width: 100%;
   height: 58px;
 }
 
@@ -659,7 +678,7 @@ textarea {
 }
 
 .comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
