@@ -4,68 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
-    <!--<header class="header">
+    <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a
-            class="logo-link link animate__bounceIn"
-            href="./index.html"
-            aria-label="логотип вэбстудии"
-          >
+        <nav class="navigation-main">
+          <a class="logo-link link animate__bounceIn" href="./index.html" aria-label="логотип вэбстудии">
             <span class="logo">Web</span><span class="logo-two">Studio</span>
           </a>
-
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a class="link site-nav__link curent-link" href="./index.html">
-                <span class="site-nav__studio">Студия</span>
-              </a>
-            </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link line" href="">Контакты</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="header-menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px">
+              <use class="icon-close" href="./images/header/sprite.cross.menu.svg#icon-close-2"></use>
+              <use class="icon-menu" href="./images/header/sprite.cross.menu.svg#icon-menu-2"></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="navigation-list list">
+                <li class="navigation-item">
+                  <a class="link navigation-link curent-link" href="./index.html">
+                    <span class="navigation-studio">Студия</span>
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link link line" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <address class="address">
+              <ul class="header__list list">
+                <li class="header-tel__item">
+                  <a class="header-tel__link link" href="tel:+380961111111">
+                    <svg class="header-tel__icon-telsvg">
+                      <use href="./images/sprite.svg.svg#icon-telsvg"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="header-mail__item">
+                  <a class="header-mail__link" href="mailto:info@devstudio.com">
+                    <svg class="header-mail__icon-emailsvg">
+                      <use href="./images/sprite.svg.svg#icon-emailsvg"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
         </nav>
-        <address class="address">
-          <ul class="header__list list">
-            <li class="header-tel__item">
-              <a class="header-tel__link link" href="tel:+380961111111">
-                <svg class="header-tel__icon-telsvg">
-                  <use href="./images/sprite.svg.svg#icon-telsvg"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="header-mail__item">
-              <a class="header-mail__link" href="mailto:info@devstudio.com">
-                <svg class="header-mail__icon-emailsvg">
-                  <use href="./images/sprite.svg.svg#icon-emailsvg"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
     <!-- Main-->
@@ -137,8 +142,7 @@
                   />
                   <label for="check-policy" class="modal-form-policy-label">
                     <span class="agreemment-policy"
-                      >Соглашаюсь с рассылкой и принимаю
-                      <a class="terms-agreement" href="#">Условия договора</a></span
+                      >Соглашаюсь с рассылкой и принимаю <a class="terms-agreement" href="#">Условия договора</a></span
                     >
                   </label>
                 </div>
@@ -267,13 +271,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team-name__img"
-                src="./images/team/img.2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <img class="team-name__img" src="./images/team/img.2.jpg" alt="Ольга Репина" width="270" height="260" />
               <div class="team-title__wraper">
                 <h4 class="team__name">Ольга Репина</h4>
                 <p class="team__profession" lang="en">Frontend Developer</p>
@@ -464,10 +462,7 @@
             <address class="address">
               <ul class="footer-address-list list">
                 <li class="footer-map-item">
-                  <a
-                    class="footer-map-link link"
-                    href="https://goo.gl/maps/KVh2sjvW69xW6A4LA"
-                    target="_blank"
+                  <a class="footer-map-link link" href="https://goo.gl/maps/KVh2sjvW69xW6A4LA" target="_blank"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
@@ -475,9 +470,7 @@
                   <a class="footer-tel-link link" href="tel:+380991111111 ">+38 099 111 11 11</a>
                 </li>
                 <li class="mail-item">
-                  <a class="footer-mail-link link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
+                  <a class="footer-mail-link link" href="mailto:info@example.com">info@example.com</a>
                 </li>
               </ul>
             </address>
@@ -518,13 +511,7 @@
           <div class="footer-subscribe-wraper">
             <p class="subscribe-letter">Подпишитесь на рассылку</p>
             <form action="#" method="GET" class="subscribe-form">
-              <input
-                class="modal-form-subscrib"
-                type="email"
-                name="mail"
-                placeholder="Email"
-                required
-              />
+              <input class="modal-form-subscrib" type="email" name="mail" placeholder="Email" required />
               <div class="modal-subscribe-button-wraper">
                 <button type="submit" class="modal-subscribe-button iconsend">
                   <span class="modal-subscribe-button-link">Подписаться</span>
