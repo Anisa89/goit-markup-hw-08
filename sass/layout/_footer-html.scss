@@ -90,6 +90,7 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
+  font-style: normal;
 
   letter-spacing: 0.03em;
 
@@ -99,6 +100,7 @@
     font-weight: bold;
     font-size: 26px;
     line-height: 1.192;
+    font-style: normal;
 
     letter-spacing: 0.03em;
     color: #ffffff;
@@ -142,7 +144,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1, 714;
-
+  font-style: normal;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
@@ -358,8 +360,7 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
-  /* identical to box height */
-
+  font-style: normal;
   letter-spacing: 0.03em;
 
   color: $hover-color;
