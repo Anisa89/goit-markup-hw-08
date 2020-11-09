@@ -107,7 +107,7 @@
 .logo {
   &-link {
     @media screen and (min-width: 480px) {
-      margin-right: 0;
+      /* margin-right: 0;*/
       animation-duration: 1000ms;
       animation-iteration-count: 4;
     }

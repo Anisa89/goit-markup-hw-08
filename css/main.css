@@ -264,7 +264,7 @@ img {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header {
     position: relative;
   }
@@ -274,6 +274,7 @@ img {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
+    display: flex;
   }
 }
 
@@ -332,7 +333,7 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-right: 50px;
+  /* margin-right: 50px;*/
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -397,6 +398,22 @@ img {
   display: none;
 }
 
+.header .navigation-main {
+  /*@media screen and (max-width: 1199px) and (min-width: 768px) {
+    display: flex;
+  }*/
+}
+
+@media screen and (max-width: 767px) {
+  .header .navigation-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+  }
+}
+
 /*Logo*/
 .logo {
   font-family: Raleway;
@@ -407,8 +424,15 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
 .logo-link {
-  /* margin-right: 92px;*/
+  margin-right: 92px;
   animation-duration: 1000ms;
   animation-iteration-count: 4;
 }
@@ -440,26 +464,17 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  width: 100%;
-}
-
 .menu-container {
-  position: absolute;
+  /* position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  height: 453px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  height: 453px;*/
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
     position: absolute;
     top: 61px;
     left: 0%;
@@ -476,15 +491,16 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-container {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     height: 100%;
     align-items: center;
+    justify-content: center;
   }
 }
 
-.address,
-.navigation {
+.menu-container .address,
+.menu-container .navigation {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16667;
@@ -494,19 +510,17 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .navigation {
-    margin-left: 88px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navigation-list {
+  .menu-container .navigation-list {
+    /* margin-left: 88px;*/
     display: flex;
-    text-align: center;
   }
 }
 
-.navigation-studio, .navigation-link, .navigation-link {
+.menu-container .navigation-list {
+  display: flex;
+}
+
+.menu-container .navigation-studio, .menu-container .navigation-link, .menu-container .navigation-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -517,19 +531,19 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-item:not(:last-child) {
+.menu-container .navigation-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-studio:hover, .navigation-studio:focus, .navigation-link:hover, .navigation-link:focus {
+.menu-container .navigation-studio:hover, .menu-container .navigation-studio:focus, .menu-container .navigation-link:hover, .menu-container .navigation-link:focus {
   color: #2196f3;
 }
 
-.navigation__portfolio:hover, .navigation__portfolio:focus {
+.menu-container .navigation__portfolio:hover, .menu-container .navigation__portfolio:focus {
   color: #2196f3;
 }
 
-.navigation__portfolio {
+.menu-container .navigation__portfolio {
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
@@ -538,26 +552,26 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-header {
+.menu-container .portfolio-header {
   border: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: #ffffff;
 }
 
-.portfolio-header .container {
+.menu-container .portfolio-header .container {
   align-items: center;
   display: flex;
 }
 
-.link-portfolio-link {
+.menu-container .link-portfolio-link {
   display: block;
   margin-right: 92px;
   animation-duration: 1000ms;
   animation-iteration-count: 4;
 }
 
-.logo-list {
+.menu-container .logo-list {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -567,7 +581,7 @@ img {
   color: #2196f3;
 }
 
-.logo-list2 {
+.menu-container .logo-list2 {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -1390,7 +1404,7 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .logo-link {
-    margin-right: 0;
+    /* margin-right: 0;*/
     animation-duration: 1000ms;
     animation-iteration-count: 4;
   }
