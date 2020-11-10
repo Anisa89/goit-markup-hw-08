@@ -830,7 +830,7 @@ img {
   }*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .item-works {
     width: 450px;
     margin-bottom: 30px;
