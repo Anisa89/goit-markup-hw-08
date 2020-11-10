@@ -944,14 +944,16 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .nav-footer {
-    margin-bottom: 60px;
-  }
+.nav-footer {
+  /*@media screen and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
+  }*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .nav-footer {
+    margin-bottom: 60px;
     text-align: center;
     width: 100%;
   }
@@ -966,13 +968,12 @@ img {
 
 @media screen and (min-width: 1200px) {
   .nav-footer {
-    padding-bottom: 60px;
     margin-right: 70px;
     text-align: left;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .nav-footer__wraper {
     text-align: center;
     width: 100%;
@@ -984,16 +985,15 @@ img {
   /* display: block;
   min-width: 206px;
   height: 120px;*/
+  /*@media screen and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
+  }*/
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .social-wraper {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .social-wraper {
     text-align: center;
     width: 100%;
   }
@@ -1144,7 +1144,7 @@ img {
   margin-bottom: 20px;*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-subscribe-wraper {
     text-align: center;
     width: 100%;
@@ -1174,7 +1174,7 @@ img {
   align-items: center;*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .subscribe-form {
     display: block;
     /* margin-bottom: 60px;*/
@@ -1200,7 +1200,7 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .subscribe-letter {
     display: block;
   }
@@ -1216,7 +1216,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .modal-form-subscrib {
     width: 100%;
   }
@@ -1261,7 +1261,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .modal-subscribe-button-wraper {
     margin-top: 20px;
   }
@@ -1331,6 +1331,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
+  font-style: normal;
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-top: 20px;

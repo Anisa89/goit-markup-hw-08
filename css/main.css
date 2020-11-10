@@ -148,7 +148,7 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .features-list {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -172,11 +172,11 @@ img {
   padding-top: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .features-list {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.features-list {
+  /* @media screen and (min-width: 480px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }*/
 }
 
 @media screen and (min-width: 480px) {
@@ -1264,7 +1264,7 @@ textarea {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .clients-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1282,17 +1282,25 @@ textarea {
   font-family: Roboto;
   font-style: 700;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .clients-name {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-name {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -1300,10 +1308,17 @@ textarea {
   margin: -15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1326,7 +1341,7 @@ textarea {
   margin: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients-list-item {
     display: inline-block;
     width: calc((100% - 2 * 30px) / 2);
@@ -1451,14 +1466,16 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .nav-footer {
-    margin-bottom: 60px;
-  }
+.nav-footer {
+  /*@media screen and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
+  }*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .nav-footer {
+    margin-bottom: 60px;
     text-align: center;
     width: 100%;
   }
@@ -1473,13 +1490,12 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .nav-footer {
-    padding-bottom: 60px;
     margin-right: 70px;
     text-align: left;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .nav-footer__wraper {
     text-align: center;
     width: 100%;
@@ -1491,16 +1507,15 @@ textarea {
   /* display: block;
   min-width: 206px;
   height: 120px;*/
+  /*@media screen and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
+  }*/
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .social-wraper {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .social-wraper {
     text-align: center;
     width: 100%;
   }
@@ -1651,7 +1666,7 @@ textarea {
   margin-bottom: 20px;*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-subscribe-wraper {
     text-align: center;
     width: 100%;
@@ -1681,7 +1696,7 @@ textarea {
   align-items: center;*/
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .subscribe-form {
     display: block;
     /* margin-bottom: 60px;*/
@@ -1707,7 +1722,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .subscribe-letter {
     display: block;
   }
@@ -1723,7 +1738,7 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .modal-form-subscrib {
     width: 100%;
   }
@@ -1768,7 +1783,7 @@ textarea {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .modal-subscribe-button-wraper {
     margin-top: 20px;
   }
@@ -1838,6 +1853,7 @@ textarea {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
+  font-style: normal;
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-top: 20px;
