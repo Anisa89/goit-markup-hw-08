@@ -1020,7 +1020,7 @@ textarea {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/section-hero/hero-x1-mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/section-hero/Hero-x1-mob.jpg);
   }
 }
 
